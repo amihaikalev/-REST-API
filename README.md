@@ -21,21 +21,30 @@ import pandas as pd
 
 ### requests.csv:
 timestamp: Linux epoch timestamp
+
 session_id: unique identifier for session_id
+
 partner: partner name
+
 user_id: unique identifier for user
+
 bid: a float value represents the price
+
 win: a Boolean value shows if the bid won
 
 ### impressions.csv:
 timestamp: Linux epoch timestamp
+
 session_id: unique identifier for session_id
+
 Duration: impressions duration time
 
 ### clicks.csv:
 timestamp: Linux epoch timestamp
+
 session_id: unique identifier for session_id
-Time: time passed till the user click the ad.
+
+Time: time passed till the user click the ad
 
 
 ## Running the app
