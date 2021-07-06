@@ -48,6 +48,7 @@ $ python rest_api.py
 
 ### /keepalive:
 Input: None
+
 Output: is the service up and ready for query
 
 ### /userStats
