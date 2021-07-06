@@ -1,8 +1,5 @@
 from flask import Flask, json, request
-#from flask import Response
-#from flask import jsonify
 from werkzeug.serving import WSGIRequestHandler
-
 
 import pandas as pd
 
@@ -10,12 +7,9 @@ import pandas as pd
 api = Flask(__name__)
 
 
-
-
 @api.route('/keepalive', methods=['GET'])
 def api_users():
     try:
-        print("hi")
         requests = pd.read_csv("requests.csv", names=['timestamp', 'session_id', 'partner', 'user_id', 'bid', 'win'])
         impressions = pd.read_csv("impressions.csv", names=['timestamp', 'session_id', 'duration'])
         clicks = pd.read_csv("clicks.csv", names=['timestamp', 'session_id', 'time'])
@@ -84,3 +78,4 @@ def sessionId(session_id):
 if __name__ == '__main__':
     WSGIRequestHandler.protocol_version = "HTTP/1.1"
     api.run()
+    
