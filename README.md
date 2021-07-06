@@ -41,7 +41,7 @@ Time: time passed till the user click the ad.
 ## Running the app
 
 ### Now run the webapp:
-$ python ./example.py
+$ python rest_api.py
  * Running on http://127.0.0.1:5000/
 
 ### You can now open a new tab and interact with the API from the command line:
