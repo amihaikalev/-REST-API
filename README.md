@@ -53,16 +53,25 @@ Output: is the service up and ready for query
 ### /userStats
 Input: user_id
 Output:
+
 Num of requests
+
 Num of impressions
+
 Num of clikcs
+
 Average price for bid (include only wins)
+
 Median Impression duration
+
 Max time passed till click
 
 ### /sessionId
 Input: session_id
 Output:
+
 Begin: request timestamp
+
 Finish: latest timestamp (request/click/impression)
+
 Partner name
